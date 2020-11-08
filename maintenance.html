@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charse="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
         <title>Mantenimiento</title>
         <style type="text/css">
             * {
@@ -39,19 +39,19 @@
                 display: block;
                 float: left;
                 margin-top: 60px;
-                height: 69%;
+                width: 36%;
             }
             .clearfix {
                 float: none;
                 clear: both;
             }
             .description {
-                height: 409px;
+                height: 365px;
                 width: 50%;
-                margin-top: 241px;
+                margin-top: 219px;
                 margin-right: 30px;
                 float: right;
-                border: 18px solid white;
+                border: 15px solid white;
                 border-radius: 45px;
                 background-color: #365b6e;
                 box-shadow: 0px 0px 15px #506975;
@@ -65,9 +65,9 @@
                 color: white;
             }
             .description-subtitle {
-                /* display: block;*/
+                /* display: block; */
                 text-align: center;
-                margin-top: 65px;
+                margin-top: 44px;
                 margin-right: 20px;
                 margin-left: 20px;
                 font-size: 30px;
@@ -76,7 +76,100 @@
             .description-petapi {
                 text-align: center;
                 color: white;
-                margin-top: 107px;
+                margin-top: 91px;
+            }
+            @media (max-width: 1280px) {
+                .img-container {
+                    width: 45%;
+                }
+                .description {
+                    height: 310px;
+                    width: 48%;
+                    margin-top: 194px;
+                    border: 12px solid white;
+                }
+                .description-title {
+                    margin-top: 83px;
+                    font-size: 36px;
+                }
+                .description-subtitle {
+                    margin-top: 60px;
+                    font-size: 20px;
+                }
+                .description-petapi {
+                    margin-top: 73px;
+                    font-size: 16px;
+                }
+            }
+            @media (max-width: 1024px) {
+                .first-title {
+                    font-size: 40px;
+                }
+                .description {
+                    height: 245px;
+                    margin-top: 167px;
+                    border: 10px solid white;
+                    border-radius: 30px;
+                }
+                .description-title {
+                    margin-top: 66px;
+                    font-size: 28px;
+                }
+                .description-subtitle {
+                    margin-top: 49px;
+                    font-size: 16px;
+                }
+                .description-petapi {
+                    margin-top: 62px;
+                    font-size: 12px;
+                }
+            }
+            @media (max-width: 768px) {
+                .title {
+                    width: 90%;
+                }
+                .img-container {
+                    float: none;
+                    margin: 0px auto;
+                    width: 61%;
+                }
+                .description {
+                    float: none;
+                    margin: 0px auto;
+                    margin-top: 98px;
+                    width: 63%;
+                }
+            }
+            @media (max-width: 414px) {
+                .first-title {
+                    font-size: 28px;
+                }
+                .img-container {
+                    width: 88%;
+                }
+                .description {
+                    width: 91%;
+                    border: 7px solid white;
+                    border-radius: 20px;
+                }
+                .description-title {
+                    font-size: 21px;
+                }
+                .description-subtitle {
+                    font-size: 11px;
+                }
+                .description-petapi {
+                    margin-top: 71px;
+                    font-size: 10px;
+                }
+            }
+            @media (max-width: 375px) {
+                .description-title {
+                    font-size: 20px;
+                }
+                .description-subtitle {
+                    font-size: 10px;
+                }
             }
         </style>
     </head>
