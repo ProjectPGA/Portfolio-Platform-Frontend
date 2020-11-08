@@ -27,12 +27,12 @@ export default class TopNavbarItemLink extends Vue {
 <style lang="scss" scoped>
 .top-navbar-link {
     &:hover {
-        -webkit-animation: opacity-change 0.8s;
-        animation: opacity-change 0.8s;
+        -webkit-animation: opacity-change 0.3s;
+        animation: opacity-change 0.3s;
     }
     @include touch {
-        -webkit-animation: opacity-change 0.8s;
-        animation: opacity-change 0.8s;
+        -webkit-animation: opacity-change 0.3s;
+        animation: opacity-change 0.3s;
     }
 }
 </style>

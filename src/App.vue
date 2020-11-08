@@ -1,7 +1,11 @@
 <template>
     <div id="app">
-        <top-navbar />
-        <router-view />
+        <main-layout>
+            <template>
+                <top-navbar />
+                <router-view />
+            </template>
+        </main-layout>
     </div>
 </template>
 
@@ -9,11 +13,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 import TopNavbar from '@/components/navbar/TopNavbar.vue';
+import MainLayout from '@/components/common/MainLayout.vue';
 
 @Component({
     name: 'App',
     components: {
         TopNavbar,
+        MainLayout,
     },
 })
 export default class App extends Vue {}
