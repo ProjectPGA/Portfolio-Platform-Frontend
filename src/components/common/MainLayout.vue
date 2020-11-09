@@ -34,8 +34,9 @@ export default class MainLayout extends Vue {}
 
 <style lang="scss" scoped>
 .main-layout-content {
+    min-height: 102vh;
     &_left-menu {
-        background-color: #c9edff;
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
     }
     &_right-content {
         padding-left: 0px !important;
