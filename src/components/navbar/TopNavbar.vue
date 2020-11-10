@@ -4,8 +4,13 @@
         :class="{ 'is-fixed': isFixed, 'is-sticky': isSticky }"
     >
         <template slot="brand">
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
-            </b-navbar-item>
+            <top-navbar-item-link class="top-navbar_brand">
+                <b-icon
+                    class="top-navbar_left-menu"
+                    icon="bars"
+                    size="is-medium"
+                />
+            </top-navbar-item-link>
         </template>
         <template slot="start">
             <top-navbar-item-link
@@ -61,6 +66,20 @@ export default class TopNavbar extends Vue {
     &.is-sticky {
         position: sticky;
         top: 0;
+    }
+
+    &_left-menu {
+        &:hover {
+            color: $main-color-medium-dark;
+        }
+        &:active {
+            color: $main-color-medium-dark;
+        }
+    }
+    &_brand {
+        &:focus {
+            color: #fff !important;
+        }
     }
 }
 </style>
