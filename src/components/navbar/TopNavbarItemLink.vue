@@ -31,6 +31,7 @@ export default class TopNavbarItemLink extends Vue {
         -webkit-animation: opacity-change 0.2s;
         animation: opacity-change 0.2s;
     }
+
     @include touch {
         -webkit-animation: opacity-change 0.2s;
         animation: opacity-change 0.2s;
