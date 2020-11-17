@@ -1,6 +1,6 @@
 {
     "pluginsFile": "tests/e2e/plugins/index.js",
-    "baseUrl": "http://localhost:1900/",
+    "baseUrl": "http://localhost:18000/",
     "viewportHeight": 720,
     "viewportWidth": 1280,
     "requestTimeout": 8000,
