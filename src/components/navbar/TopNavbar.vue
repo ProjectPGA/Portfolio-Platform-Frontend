@@ -2,6 +2,7 @@
     <b-navbar
         class="top-navbar"
         :class="{ 'is-fixed': isFixed, 'is-sticky': isSticky }"
+        data-cy="top-navbar"
     >
         <template slot="brand">
             <top-navbar-item-link class="top-navbar_brand">
