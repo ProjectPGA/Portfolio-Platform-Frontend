@@ -1,1 +1,10 @@
+// Fonts
 $family-sans-serif: #{$p-fallback-fonts};
+
+// Navbar
+$navbar-item-color: #fff;
+$navbar-background-color: $main-color;
+$navbar-item-hover-color: $main-color;
+$navbar-item-active-color: $main-color;
+$navbar-item-hover-background-color: $main-color-medium-light;
+$navbar-item-active-background-color: $main-color-medium-light;
