@@ -1,7 +1,7 @@
 <template>
     <div class="about">
         <div class="section">
-            <p class="title">About</p>
+            <p class="title">{{ $t('components.navigation.about') }}</p>
         </div>
     </div>
 </template>

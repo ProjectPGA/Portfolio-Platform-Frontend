@@ -10,10 +10,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue, Watch } from 'vue-property-decorator';
+
+import Axios from 'axios';
 
 import TopNavbar from '@/components/navbar/TopNavbar.vue';
 import MainLayout from '@/components/common/MainLayout.vue';
+
+import mainStore from '@/store/main-store/MainStore';
 
 @Component({
     name: 'App',
@@ -22,7 +26,24 @@ import MainLayout from '@/components/common/MainLayout.vue';
         MainLayout,
     },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+    private mainStore = mainStore.context(this.$store);
+
+    private get currentLanguage(): string {
+        return this.mainStore.state.currentLanguage;
+    }
+
+    public created() {
+        const store = this.$store;
+        this.$i18n.locale = this.currentLanguage;
+        Axios.defaults.headers.post['Accept-Language'] = this.currentLanguage;
+    }
+
+    @Watch('currentLanguage')
+    private onChangeLanguage(language: string) {
+        this.$i18n.locale = this.currentLanguage;
+    }
+}
 </script>
 
 <style lang="scss" scoped></style>

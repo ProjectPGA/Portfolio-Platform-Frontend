@@ -7,7 +7,6 @@
                 size="is-medium"
                 @click.native="changeStatusLeftMenu"
         /></mq-layout>
-        <mq-layout :mq="['sm', 'md']"> </mq-layout>
     </top-navbar-item-link>
 </template>
 
