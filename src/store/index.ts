@@ -4,12 +4,14 @@ import { createStore, Module } from 'vuex-smart-module';
 import createPersistedState from 'vuex-persistedstate';
 
 import mainStore from './main-store/MainStore';
+import NavigationStore from './navigation-store/NavigationStore';
 
 Vue.use(Vuex);
 
 const root = new Module({
     modules: {
         mainStore,
+        NavigationStore,
     },
 });
 
