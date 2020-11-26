@@ -3,7 +3,9 @@
         <main-layout>
             <template>
                 <top-navbar />
-                <router-view />
+                <transition name="fade">
+                    <router-view />
+                </transition>
             </template>
         </main-layout>
     </div>
