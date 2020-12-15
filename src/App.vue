@@ -3,9 +3,12 @@
         <main-layout>
             <template>
                 <top-navbar />
-                <transition name="fade">
+                <transition name="slide-fade-inverted" mode="out-in">
                     <router-view />
                 </transition>
+            </template>
+            <template v-slot:left>
+                <left-menu />
             </template>
         </main-layout>
     </div>
@@ -16,6 +19,7 @@ import { Component, Vue, Watch } from 'vue-property-decorator';
 
 import Axios from 'axios';
 
+import LeftMenu from '@/components/navbar/LeftMenu.vue';
 import TopNavbar from '@/components/navbar/TopNavbar.vue';
 import MainLayout from '@/components/common/MainLayout.vue';
 
@@ -24,6 +28,7 @@ import mainStore from '@/store/main-store/MainStore';
 @Component({
     name: 'App',
     components: {
+        LeftMenu,
         TopNavbar,
         MainLayout,
     },

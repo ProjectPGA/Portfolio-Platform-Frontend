@@ -11,10 +11,7 @@ import axios from 'axios';
 import Buefy from 'buefy';
 import i18n from '@/localization/localization';
 
-import { Scroll } from '@/directives/Scroll';
 import { Device } from '@/models/utils/Device';
-import { WindowResize } from '@/directives/WindowResize';
-import { Autofocus } from '@/directives/AutofocusDirective';
 
 Vue.config.productionTip = false;
 
@@ -33,10 +30,6 @@ Vue.use(VueMq, {
     },
     defaultBreakpoint: 'sm',
 });
-
-Vue.directive('scroll', Scroll);
-Vue.directive('autofocus', Autofocus);
-Vue.directive('resize', WindowResize);
 
 new Vue({
     router,

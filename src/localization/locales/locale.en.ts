@@ -1,11 +1,13 @@
 const en = {
     components: {
         navigation: {
+            css: 'Css',
             home: 'Home',
             about: 'About',
-            languaje: 'Languaje',
             spanish: 'Spanish',
             english: 'English',
+            languaje: 'Languaje',
+            javascript: 'Javascript',
         },
     },
 };

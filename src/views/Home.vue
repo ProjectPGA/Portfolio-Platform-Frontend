@@ -9,12 +9,16 @@
                     </b-button>
                 </div>
                 <div class="column">
-                    <b-tag type="is-success" v-if="testData">
-                        {{ testData }}
-                    </b-tag>
-                    <b-tag type="is-danger" v-else>
-                        {{ testData }}
-                    </b-tag>
+                    <transition name="slide-deform">
+                        <b-tag type="is-success" v-if="testData">
+                            {{ testData }}
+                        </b-tag>
+                    </transition>
+                    <transition name="slide-deform">
+                        <b-tag type="is-danger" v-if="!testData">
+                            {{ testData }}
+                        </b-tag>
+                    </transition>
                 </div>
             </div>
         </div>

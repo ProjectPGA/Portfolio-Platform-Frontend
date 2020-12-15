@@ -1,10 +1,19 @@
+// transition that when the component is enter o leave
 .slide-fade-enter-active {
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
+
 .slide-fade-leave-active {
-    transition: all 0.2s ease;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    opacity: 0;
 }
-.slide-fade-enter,
+
+// first moment that when the component enter or eave
+.slide-fade-enter {
+    transform: translateX(10px);
+    opacity: 0;
+}
 .slide-fade-leave-to {
-    transform: translateX(-500px);
+    opacity: 0;
 }

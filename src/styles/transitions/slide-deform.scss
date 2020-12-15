@@ -1,0 +1,25 @@
+// transition that when the component is enter o leave
+.slide-deform-enter-active {
+    transform: scale(0.3) rotateY(125deg) translateX(0px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.slide-deform-leave-active {
+    transform: translateX(0px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform-origin: center center;
+}
+
+// first moment that when the component enter or eave
+.slide-deform-enter {
+    transition: all 0.3s ease;
+    transform: scale(1) position(0px 0px) translateX(0px);
+    opacity: 0;
+}
+.slide-deform-leave-to {
+    opacity: 0;
+    transform: scale(2) rotateY(125deg) translateX(0px);
+    transform-origin: center center;
+}
