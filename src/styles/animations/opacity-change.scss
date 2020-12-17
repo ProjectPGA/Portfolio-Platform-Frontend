@@ -1,0 +1,25 @@
+@-webkit-keyframes opacity-change {
+    0% {
+        opacity: 0.6;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opacity-change {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}

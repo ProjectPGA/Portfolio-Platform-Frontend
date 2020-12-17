@@ -1,10 +1,9 @@
 import Vue from 'vue';
 import App from './App.vue';
-import { store } from './store';
 import router from './router';
+import { store } from './store';
 import Router from 'vue-router';
 
-import './registerServiceWorker';
 import './styles/main.scss';
 
 import VueMq from 'vue-mq';
