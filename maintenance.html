@@ -11,7 +11,11 @@
                 padding: 0px;
             }
             body {
+                height: 100vh;
                 background-color: #74c5ed;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
             .container {
                 display: flex;
@@ -30,7 +34,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 350px;
+                height: 150px;
                 margin-top: 47px;
             }
             .description-title {
@@ -46,6 +50,7 @@
             .description-petapi {
                 text-align: center;
                 color: white;
+                margin-bottom: 20px;
             }
 
             @media (max-width: 600px) {
@@ -75,8 +80,8 @@
                 <h3 class="description-subtitle">
                     ¡Estamos generando e implantando nuevas ideas!
                 </h3>
-                <h3 class="description-petapi">&copy; PETAPI</h3>
             </div>
         </div>
+        <footer class="description-petapi">&copy; PETAPI</footer>
     </body>
 </html>
