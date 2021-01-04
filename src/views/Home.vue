@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="section">
-            <p class="title">Home</p>
+            <p class="title">{{ $t('components.navigation.home') }}</p>
             <div class="columns">
                 <div class="column is-2">
                     <b-button type="is-info" @click="changeTestDate()">
@@ -9,12 +9,16 @@
                     </b-button>
                 </div>
                 <div class="column">
-                    <b-tag type="is-success" v-if="testData">
-                        {{ testData }}
-                    </b-tag>
-                    <b-tag type="is-danger" v-else>
-                        {{ testData }}
-                    </b-tag>
+                    <transition name="slide-deform">
+                        <b-tag type="is-success" v-if="testData">
+                            {{ testData }}
+                        </b-tag>
+                    </transition>
+                    <transition name="slide-deform">
+                        <b-tag type="is-danger" v-if="!testData">
+                            {{ testData }}
+                        </b-tag>
+                    </transition>
                 </div>
             </div>
         </div>
@@ -42,4 +46,8 @@ export default class Home extends Vue {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.home {
+    height: 100%;
+}
+</style>
