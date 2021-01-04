@@ -24,16 +24,6 @@
                 :active="this.$route.name === 'Home'"
             />
             <top-navbar-item-link
-                to="/css"
-                :title="$t('components.navigation.css')"
-                :active="this.$route.name === 'Css'"
-            />
-            <top-navbar-item-link
-                to="/javascript"
-                :title="$t('components.navigation.javascript')"
-                :active="this.$route.name === 'Javascript'"
-            />
-            <top-navbar-item-link
                 to="/about"
                 :title="$t('components.navigation.about')"
                 :active="this.$route.name === 'About'"

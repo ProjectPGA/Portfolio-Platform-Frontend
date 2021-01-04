@@ -5,7 +5,7 @@
                 <transition name="slide-fade-menu" mode="out-in">
                     <div
                         v-if="isShowLeftMenu"
-                        class="column is-2 main-layout-content_left-menu h-100"
+                        class="column is-2 main-layout-content_left-menu"
                     >
                         <slot name="left"></slot>
                     </div>
