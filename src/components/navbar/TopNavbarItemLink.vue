@@ -7,7 +7,7 @@
     >
         <span class="top-navbar-link_item">
             {{ title }}
-            <slot></slot>
+            <slot />
         </span>
     </b-navbar-item>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div class="about">
         <div class="section">
-            <p class="title">About</p>
+            <p class="title">{{ $t('components.navigation.about') }}</p>
         </div>
     </div>
 </template>
@@ -17,4 +17,8 @@ import mainStore from '@/store/main-store/MainStore';
 export default class About extends Vue {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.about {
+    height: 100%;
+}
+</style>

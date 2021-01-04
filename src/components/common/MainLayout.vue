@@ -2,12 +2,14 @@
     <responsive-layout class="main-layout">
         <template>
             <div class="main-layout-content columns">
-                <div
-                    v-if="isShowLeftMenu"
-                    class="column is-2 main-layout-content_left-menu"
-                >
-                    <slot name="left"></slot>
-                </div>
+                <transition name="slide-fade-menu" mode="out-in">
+                    <div
+                        v-if="isShowLeftMenu"
+                        class="column is-2 main-layout-content_left-menu"
+                    >
+                        <slot name="left"></slot>
+                    </div>
+                </transition>
                 <div class="column main-layout-content_right-content">
                     <slot></slot>
                 </div>
@@ -53,6 +55,7 @@ export default class MainLayout extends Vue {
         border-right: 1px solid rgba(0, 0, 0, 0.12);
         padding: 0px !important;
         margin: 0px;
+        width: 300px !important;
     }
 
     &_right-content {

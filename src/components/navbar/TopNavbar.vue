@@ -12,25 +12,27 @@
                         icon="bars"
                         size="is-medium"
                         @click.native="changeStatusLeftMenu"
-                /></mq-layout>
-                <mq-layout :mq="['sm', 'md']"> </mq-layout>
+                    />
+                </mq-layout>
             </top-navbar-item-link>
         </template>
 
         <template slot="start">
             <top-navbar-item-link
                 to="/"
-                title="Home"
+                :title="$t('components.navigation.home')"
                 :active="this.$route.name === 'Home'"
             />
             <top-navbar-item-link
-                to="/About"
-                title="About"
+                to="/about"
+                :title="$t('components.navigation.about')"
                 :active="this.$route.name === 'About'"
             />
         </template>
 
-        <template slot="end"></template>
+        <template slot="end">
+            <top-navbar-languaje />
+        </template>
     </b-navbar>
 </template>
 
@@ -38,6 +40,7 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
 import TopNavbarItemLink from '@/components/navbar/TopNavbarItemLink.vue';
+import TopNavbarLanguaje from '@/components/navbar/TopNavbarLanguaje.vue';
 
 import navigationStore from '@/store/navigation-store/NavigationStore';
 
@@ -45,6 +48,7 @@ import navigationStore from '@/store/navigation-store/NavigationStore';
     name: 'TopNavbar',
     components: {
         TopNavbarItemLink,
+        TopNavbarLanguaje,
     },
 })
 export default class TopNavbar extends Vue {
