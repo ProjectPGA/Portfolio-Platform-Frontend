@@ -40,14 +40,13 @@ export default class App extends Vue {
         return this.mainStore.state.currentLanguage;
     }
 
-    public created() {
-        const store = this.$store;
+    public created(): void {
         this.$i18n.locale = this.currentLanguage;
         Axios.defaults.headers.post['Accept-Language'] = this.currentLanguage;
     }
 
     @Watch('currentLanguage')
-    private onChangeLanguage(language: string) {
+    private onChangeLanguage() {
         this.$i18n.locale = this.currentLanguage;
     }
 }
