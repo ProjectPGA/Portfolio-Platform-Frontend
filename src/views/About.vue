@@ -9,8 +9,6 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-import mainStore from '@/store/main-store/MainStore';
-
 @Component({
     name: 'About',
 })
