@@ -22,5 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
+    - run: npm run format:check
+    - run: npm run lint
     - run: npm run build
     - run: cp -a dist/* /var/www/html/prod/portfolio-platform/ 
