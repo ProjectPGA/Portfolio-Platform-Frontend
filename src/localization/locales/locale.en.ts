@@ -10,6 +10,12 @@ const en = {
             javascript: 'Javascript',
         },
     },
+    views: {
+        maintenance: {
+            title: 'Web in maintenance',
+            subtitle: '¡Something big is in coming!',
+        },
+    },
 };
 
 export default en;

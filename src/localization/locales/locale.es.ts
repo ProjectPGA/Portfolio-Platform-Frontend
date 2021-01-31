@@ -10,6 +10,12 @@ const es = {
             javascript: 'Javascript',
         },
     },
+    views: {
+        maintenance: {
+            title: 'Página en mantenimiento',
+            subtitle: '¡Algo grande está apunto de llegar!',
+        },
+    },
 };
 
 export default es;
