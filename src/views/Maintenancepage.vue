@@ -57,7 +57,7 @@ export default class Maintenance extends Vue {
     color: #3a4750;
 }
 .maintenance-subtitle {
-    font-size: 29px;
+    font-size: 30px;
 }
 @media (max-width: 750px) {
     .maintenance-content {
