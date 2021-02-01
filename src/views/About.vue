@@ -15,8 +15,4 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class About extends Vue {}
 </script>
 
-<style lang="scss" scoped>
-.about {
-    height: 100%;
-}
-</style>
+<style lang="scss" scoped></style>

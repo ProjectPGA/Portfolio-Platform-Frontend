@@ -65,37 +65,42 @@ export default class MainLayout extends Vue {
 
 <style lang="scss" scoped>
 .main-layout-content {
+    min-height: 100vh;
     margin: 0px !important;
 
     &_left-menu {
-        border-right: 1px solid rgba(0, 0, 0, 0.12);
-        padding: 0px !important;
         margin: 0px;
+        padding: 0px !important;
         width: 300px !important;
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
     }
 
     &_right-content {
-        padding: 0px !important;
+        padding: 0px;
         margin: 0px;
     }
 
     &_left-menu-mobile {
         top: 0px;
         left: 0px;
-        position: absolute;
         width: 300px;
         height: 100%;
-        background-color: #fff;
         z-index: 2000;
+        position: absolute;
+        background-color: #fff;
     }
 
     &_bottom-menu-mobile {
-        position: absolute;
-        bottom: 0px;
         left: 0px;
         width: 100%;
+        bottom: 0px;
         height: 50px;
+        position: absolute;
         background-color: #fff;
+    }
+
+    @include touch {
+        min-height: unset;
     }
 }
 </style>
