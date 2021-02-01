@@ -7,18 +7,28 @@
                         v-if="isShowLeftMenu"
                         class="column is-2 main-layout-content_left-menu"
                     >
-                        <slot name="left"></slot>
+                        <slot name="left" />
                     </div>
                 </transition>
                 <div class="column main-layout-content_right-content">
-                    <slot></slot>
+                    <slot />
                 </div>
             </div>
         </template>
 
         <template slot="mobile">
             <div class="main-layout-content">
-                <slot></slot>
+                <transition name="slide-fade-menu" mode="out-in">
+                    <div
+                        v-if="isShowLeftMenu"
+                        class="main-layout-content_left-menu-mobile"
+                        v-click-outside="closeLeftMenu"
+                    >
+                        <slot name="left" />
+                    </div>
+                </transition>
+
+                <slot />
             </div>
         </template>
     </responsive-layout>
@@ -43,6 +53,10 @@ export default class MainLayout extends Vue {
     private get isShowLeftMenu(): boolean {
         return this.navigationStore.state.isShowLeftMenu;
     }
+
+    private closeLeftMenu(): void {
+        this.navigationStore.actions.closeLeftMenu();
+    }
 }
 </script>
 
@@ -61,6 +75,16 @@ export default class MainLayout extends Vue {
     &_right-content {
         padding: 0px !important;
         margin: 0px;
+    }
+
+    &_left-menu-mobile {
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        z-index: 2000;
     }
 }
 </style>

@@ -3,17 +3,16 @@
         class="top-navbar"
         :class="{ 'is-fixed': isFixed, 'is-sticky': isSticky }"
         data-cy="top-navbar"
+        :mobile-burger="false"
     >
         <template slot="brand">
             <top-navbar-item-link class="top-navbar_brand">
-                <mq-layout mq="lg+">
-                    <b-icon
-                        class="top-navbar_left-menu"
-                        icon="bars"
-                        size="is-medium"
-                        @click.native="changeStatusLeftMenu"
-                    />
-                </mq-layout>
+                <b-icon
+                    class="top-navbar_left-menu"
+                    icon="bars"
+                    size="is-medium"
+                    @click.native="changeStatusLeftMenu"
+                />
             </top-navbar-item-link>
         </template>
 
