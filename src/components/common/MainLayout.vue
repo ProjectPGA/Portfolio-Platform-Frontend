@@ -27,8 +27,11 @@
                         <slot name="left" />
                     </div>
                 </transition>
-
                 <slot />
+
+                <div class="main-layout-content_bottom-menu-mobile">
+                    <slot name="bottom" />
+                </div>
             </div>
         </template>
     </responsive-layout>
@@ -62,7 +65,6 @@ export default class MainLayout extends Vue {
 
 <style lang="scss" scoped>
 .main-layout-content {
-    min-height: 102vh;
     margin: 0px !important;
 
     &_left-menu {
@@ -85,6 +87,15 @@ export default class MainLayout extends Vue {
         height: 100%;
         background-color: #fff;
         z-index: 2000;
+    }
+
+    &_bottom-menu-mobile {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
     }
 }
 </style>

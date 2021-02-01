@@ -20,12 +20,12 @@
             <top-navbar-item-link
                 to="/"
                 :title="$t('components.navigation.home')"
-                :active="this.$route.name === 'Home'"
+                :isActive="this.$route.name === 'Home'"
             />
             <top-navbar-item-link
                 to="/about"
                 :title="$t('components.navigation.about')"
-                :active="this.$route.name === 'About'"
+                :isActive="this.$route.name === 'About'"
             />
         </template>
 

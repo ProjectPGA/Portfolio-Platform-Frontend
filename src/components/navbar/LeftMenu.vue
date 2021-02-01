@@ -1,5 +1,5 @@
 <template>
-    <div class="left-menu">left menu</div>
+    <div class="left-menu"></div>
 </template>
 
 <script lang="ts">
@@ -11,4 +11,10 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class LeftMenu extends Vue {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.left-menu {
+    background-color: $main-color-dark;
+    width: 100%;
+    height: 100%;
+}
+</style>

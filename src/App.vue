@@ -10,6 +10,9 @@
             <template v-slot:left>
                 <left-menu />
             </template>
+            <template v-slot:bottom>
+                <bottom-mobile-navbar />
+            </template>
         </main-layout>
     </div>
 </template>
@@ -22,6 +25,7 @@ import Axios from 'axios';
 import LeftMenu from '@/components/navbar/LeftMenu.vue';
 import TopNavbar from '@/components/navbar/TopNavbar.vue';
 import MainLayout from '@/components/common/MainLayout.vue';
+import BottomMobileNavbar from '@/components/navbar/BottomMobileNavbar.vue';
 
 import mainStore from '@/store/main-store/MainStore';
 
@@ -31,6 +35,7 @@ import mainStore from '@/store/main-store/MainStore';
         LeftMenu,
         TopNavbar,
         MainLayout,
+        BottomMobileNavbar,
     },
 })
 export default class App extends Vue {
