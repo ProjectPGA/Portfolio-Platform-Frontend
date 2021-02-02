@@ -3,17 +3,16 @@
         class="top-navbar"
         :class="{ 'is-fixed': isFixed, 'is-sticky': isSticky }"
         data-cy="top-navbar"
+        :mobile-burger="false"
     >
         <template slot="brand">
             <top-navbar-item-link class="top-navbar_brand">
-                <mq-layout mq="lg+">
-                    <b-icon
-                        class="top-navbar_left-menu"
-                        icon="bars"
-                        size="is-medium"
-                        @click.native="changeStatusLeftMenu"
-                    />
-                </mq-layout>
+                <b-icon
+                    class="top-navbar_left-menu"
+                    icon="bars"
+                    size="is-medium"
+                    @click.native="changeStatusLeftMenu"
+                />
             </top-navbar-item-link>
         </template>
 
@@ -21,12 +20,12 @@
             <top-navbar-item-link
                 to="/"
                 :title="$t('components.navigation.home')"
-                :active="this.$route.name === 'Home'"
+                :isActive="this.$route.name === 'Home'"
             />
             <top-navbar-item-link
                 to="/about"
                 :title="$t('components.navigation.about')"
-                :active="this.$route.name === 'About'"
+                :isActive="this.$route.name === 'About'"
             />
         </template>
 

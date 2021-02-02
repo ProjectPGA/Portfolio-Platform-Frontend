@@ -11,11 +11,15 @@ import axios from 'axios';
 import Buefy from 'buefy';
 import i18n from '@/localization/localization';
 
+import vClickOutside from 'v-click-outside';
+
 import { Device } from '@/models/utils/Device';
 
 Vue.config.productionTip = false;
 
 axios.defaults.headers.post['Content-Type'] = 'application/json';
+
+Vue.use(vClickOutside);
 
 Vue.use(Router);
 Vue.use(Buefy, {
