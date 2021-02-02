@@ -1,10 +1,18 @@
 <template>
     <b-navbar-dropdown
-        :label="currentLanguage"
         :collapsible="true"
         :right="true"
-        class="top-navbar-languaje"
+        class="top-navbar-language"
+        :arrowless="true"
     >
+        <template v-slot:label>
+            {{ currentLanguage }}
+            <b-icon
+                class="top-navbar-language_icon"
+                icon="globe-europe"
+                size="is-small"
+            />
+        </template>
         <b-navbar-item
             :active="currentLanguage === 'es'"
             @click="changeLanguajeToSpanish"
@@ -46,9 +54,15 @@ export default class TopNavbarLanguaje extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.top-navbar-languaje {
+.top-navbar-language {
     /deep/.navbar-link {
         text-transform: uppercase;
+    }
+    /deep/.navbar-dropdown {
+        padding: 0px;
+    }
+    &_icon {
+        margin-left: 2px !important;
     }
 }
 </style>

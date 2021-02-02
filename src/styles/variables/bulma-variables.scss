@@ -7,11 +7,11 @@ $primary: $main-color;
 // Navbar
 $navbar-item-color: #fff;
 $navbar-background-color: $main-color;
-$navbar-item-hover-color: $main-color;
-$navbar-item-active-color: $main-color;
-$navbar-item-hover-background-color: $main-color-medium-light;
-$navbar-item-active-background-color: $main-color-medium-light;
+$navbar-item-hover-background-color: #fff;
+$navbar-item-active-background-color: #fff;
 $navbar-dropdown-background-color: $main-color;
+$navbar-dropdown-radius: 0px;
+$navbar-dropdown-boxed-radius: 0px;
 
 //Menu
 $menu-item-active-background-color: $main-color;
