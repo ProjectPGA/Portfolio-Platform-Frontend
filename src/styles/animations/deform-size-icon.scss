@@ -1,0 +1,28 @@
+@-webkit-keyframes deform-size-icon {
+    0% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+}
+@keyframes deform-size-icon {
+    0% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+}

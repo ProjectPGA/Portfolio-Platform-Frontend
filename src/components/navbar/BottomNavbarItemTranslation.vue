@@ -9,7 +9,7 @@
         <template v-slot:trigger>
             <bottom-navbar-item-link
                 :title="currentLanguage"
-                icon="globe-europe"
+                icon="earth"
                 class="bottom-navbar-translations_button"
             />
         </template>
