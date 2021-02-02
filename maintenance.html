@@ -14,9 +14,17 @@
                 padding: 0px;
             }
 
+            :root {
+                /*Variables*/
+                --primary: #3a4750;
+                --secondary: #ff006e;
+                --cultured: #eeeeee;
+                --white: #ffffff;
+                --gunmetal: #303841;
+            }
             body {
                 height: 100vh;
-                background-color: #eeeeee;
+                background-color: var(--cultured);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -48,18 +56,18 @@
             .description-title {
                 font-size: 45px;
                 text-align: center;
-                color: #3a4750;
+                color: var(--primary);
             }
 
             .description-subtitle {
                 text-align: center;
                 font-size: 20px;
-                color: #3a4750;
+                color: var(--primary);
             }
 
             .description-petapi {
                 text-align: center;
-                color: #3a4750;
+                color: var(--primary);
                 margin-bottom: 20px;
             }
 
