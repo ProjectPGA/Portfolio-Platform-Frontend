@@ -13,7 +13,7 @@ const es = {
     views: {
         maintenance: {
             title: 'Página en mantenimiento',
-            subtitle: '¡Algo grande está apunto de llegar!',
+            subtitle: '¡Algo grande está a punto de llegar!',
         },
     },
 };
