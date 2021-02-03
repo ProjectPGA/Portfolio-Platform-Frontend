@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
-import Maintenance from '../views/Maintenancepage.vue';
+import MaintenancePage from '../views/MaintenancePage.vue';
 
 Vue.use(VueRouter);
 
@@ -20,8 +20,8 @@ const routes = [
     },
     {
         path: '/maintenance',
-        name: 'Maintenance',
-        component: Maintenance,
+        name: 'MaintenancePage',
+        component: MaintenancePage,
     },
 ];
 
