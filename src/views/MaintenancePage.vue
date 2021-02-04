@@ -1,28 +1,30 @@
 <template>
-    <main class="maintenance-page">
+    <div class="maintenance-page">
         <div class="maintenance-page_content level">
             <img
                 class="maintenance-page_img"
-                src="../assets/img/mantenimiento-image.svg"
+                src="../assets/img/maintenance-image.svg"
                 alt="Maintenance Image"
                 title="Maintenance-Image"
             />
             <div class="maintenance-page_description level">
-                <div class="maintenance-page_title">
+                <h1 class="maintenance-page_title">
                     {{ $t('views.maintenance.title') }}
-                </div>
-                <div class="maintenance-page_subtitle">
+                </h1>
+                <h2 class="maintenance-page_subtitle">
                     {{ $t('views.maintenance.subtitle') }}
-                </div>
+                </h2>
             </div>
             <button-translation></button-translation>
         </div>
-    </main>
+    </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+
 import ButtonTranslation from '@/components/common/ButtonTranslation.vue';
+
 @Component({
     name: 'MaintenancePage',
     components: {
