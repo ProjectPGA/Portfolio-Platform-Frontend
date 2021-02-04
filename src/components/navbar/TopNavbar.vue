@@ -92,10 +92,10 @@ export default class TopNavbar extends Vue {
 
     &_left-menu {
         &:hover {
-            color: $main-color-medium-dark;
+            color: $winter-sky;
         }
         &:active {
-            color: $main-color-medium-dark;
+            color: $winter-sky;
         }
     }
     &_brand {

@@ -13,7 +13,7 @@ export default class LeftMenu extends Vue {}
 
 <style lang="scss" scoped>
 .left-menu {
-    background-color: $main-color-dark;
+    background-color: $charcoal;
     width: 100%;
     height: 100%;
 }
