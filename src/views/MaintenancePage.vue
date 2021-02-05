@@ -36,7 +36,7 @@ export default class MaintenancePage extends Vue {}
 
 <style lang="scss" scoped>
 .maintenance-page {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffffff;
     &_content {
         flex-direction: column;
@@ -44,13 +44,13 @@ export default class MaintenancePage extends Vue {}
         padding: 20px;
 
         @include mobile {
-            height: 75vh;
             display: flex;
         }
     }
     &_img {
-        max-width: 600px;
-
+        max-width: 650px;
+        margin-top: 40px;
+        margin-bottom: 50px;
         @include mobile {
             max-width: 400px;
         }
