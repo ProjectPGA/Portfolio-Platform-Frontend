@@ -39,7 +39,7 @@ export default class BottomNavbarItemLink extends Vue {
     justify-content: center;
 }
 .is-active {
-    color: $main-color-light;
+    color: $secondary;
     .buttom-navbar-item_icon {
         -webkit-animation: deform-change 0.3s linear both;
         animation: deform-change 0.3s linear both;

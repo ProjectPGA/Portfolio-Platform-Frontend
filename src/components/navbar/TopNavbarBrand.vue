@@ -40,10 +40,10 @@ export default class TopNavbarBrand extends Vue {
     }
     &_icon {
         &:hover {
-            color: $main-color-medium-dark;
+            color: $winter-sky;
         }
         &:active {
-            color: $main-color-medium-dark;
+            color: $winter-sky;
         }
     }
 }
