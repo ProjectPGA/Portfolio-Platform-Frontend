@@ -48,7 +48,7 @@ export default class MaintenancePage extends Vue {}
         }
     }
     &_img {
-        max-width: 650px;
+        max-width: 500px;
         margin-top: 40px;
         margin-bottom: 50px;
         @include mobile {
@@ -71,6 +71,7 @@ export default class MaintenancePage extends Vue {}
 
         @include mobile {
             font-size: 26px;
+            text-align: center;
         }
     }
     &_subtitle {
