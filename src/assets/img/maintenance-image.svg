@@ -16,7 +16,7 @@
   <path d="M120 163.41a34 34 0 000-16.77h-5.82a33.69 33.69 0 00-3.72-8.76l3.87-3.87a33.9 33.9 0 00-11.86-11.86l-3.91 3.91a33.85 33.85 0 00-8.74-3.64l-.29-.06v-5.14a34 34 0 00-16.77 0v5.29a33.58 33.58 0 00-9.08 3.93l-3.55-3.55a33.9 33.9 0 00-11.86 11.86l3.76 3.76a33.29 33.29 0 00-3.56 9.18h-5.09a34 34 0 000 16.77H49a33.61 33.61 0 003.94 8.78l-3.85 3.85A34.13 34.13 0 0060.91 189l4.17-4.17a33.82 33.82 0 008.77 3.36v5.74a34 34 0 0016.77 0v-6.13a33.56 33.56 0 008.46-3.8l4.18 4.17a34 34 0 0011.85-11.86l-4.32-4.31a33.27 33.27 0 003.47-8.62zm-38.52 13.87a22.08 22.08 0 1122.08-22.08 22.08 22.08 0 01-22.08 22.08z" class="cls-3"/>
   <circle cx="81.71" cy="155.55" r="23.89" fill="none" stroke="#ff006e" stroke-miterlimit="10" stroke-width="4" transform="rotate(-45 81.71241477 155.55360959)"/>
   <path d="M600.36 274.84H720v78.73H600.36z" class="cls-3"/>
-  <text fill="#ccc" font-family="Montserrat-Bold,Montserrat Bold" font-size="53.68" font-weight="700" transform="translate(618.61 331.78)">
+  <text fill="#ccc" font-size="53.68" font-weight="700" transform="translate(618.61 331.78)">
     &lt;/&gt;
   </text>
   <path d="M326.74 24.52h96.76V90.1h-96.76z" class="cls-3"/>
@@ -45,7 +45,7 @@
   <path d="M532.72 73.32h8.72v46.32h-8.72z" class="cls-2"/>
   <path d="M566.68 55.06h8.72v46.32h-8.72z" class="cls-4"/>
   <path d="M569.86 119.14a1 1 0 001.75 0l5.7-9.87L583 99.4a1 1 0 00-.88-1.52h-22.78a1 1 0 00-.88 1.52l5.7 9.87z" class="cls-4"/>
-  <text fill="#303841" font-family="OpenSans-SemiBold,Open Sans" font-size="88.85" font-weight="600" transform="translate(246.94 313.38)">
+  <text fill="#303841" font-size="88.85" font-weight="600" transform="translate(246.94 313.38)">
     PGAJ<tspan x="204.47" y="0" font-size="22.21"></tspan>
   </text>
 </svg>
