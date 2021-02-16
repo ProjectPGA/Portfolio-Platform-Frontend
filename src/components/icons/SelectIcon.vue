@@ -1,8 +1,12 @@
 <template>
     <earth-icon class="icon" v-if="icon === 'earth'" />
-    <home-icon class="icon" v-else-if="icon === 'home'" />
-    <menu-icon class="icon" v-else-if="icon === 'menu'" />
-    <people-icon class="icon" v-else-if="icon === 'people'" />
+    <home-icon class="icon" :isActive="isActive" v-else-if="icon === 'home'" />
+    <menu-icon class="icon" :isActive="isActive" v-else-if="icon === 'menu'" />
+    <people-icon
+        class="icon"
+        :isActive="isActive"
+        v-else-if="icon === 'people'"
+    />
 </template>
 
 <script lang="ts">
@@ -24,6 +28,7 @@ import PeopleIcon from './PeopleIcon.vue';
 })
 export default class SelectIcon extends Vue {
     @Prop(String) private icon: string;
+    @Prop(Boolean) private isActive: boolean;
 }
 </script>
 

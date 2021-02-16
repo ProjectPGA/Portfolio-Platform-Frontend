@@ -1,30 +1,49 @@
 <template>
     <svg
+        v-if="isActive"
+        fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-menu-2"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        stroke-width="2"
-        stroke="currentColor"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        class="ionicon"
+        viewBox="0 0 512 512"
     >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <line x1="4" y1="6" x2="20" y2="6"></line>
-        <line x1="4" y1="12" x2="20" y2="12"></line>
-        <line x1="4" y1="18" x2="20" y2="18"></line>
+        <title>Menu</title>
+        <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="48"
+            d="M88 152h336M88 256h336M88 360h336"
+        />
+    </svg>
+    <svg
+        v-else
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        class="ionicon"
+        viewBox="0 0 512 512"
+    >
+        <title>Menu</title>
+        <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+            d="M80 160h352M80 256h352M80 352h352"
+        />
     </svg>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component({
-    name: 'earthIcon',
+    name: 'PeopleIcon',
 })
-export default class earthIcon extends Vue {}
+export default class PeopleIcon extends Vue {
+    @Prop(Boolean) private isActive: boolean;
+}
 </script>
 
 <style lang="scss" scoped></style>

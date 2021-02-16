@@ -4,7 +4,11 @@
         @click="goTo"
         :class="{ 'is-active': isActive }"
     >
-        <select-icon :icon="icon" class="buttom-navbar-item_icon" />
+        <select-icon
+            :icon="icon"
+            class="buttom-navbar-item_icon"
+            :isActive="isActive"
+        />
         {{ title }}
         <slot />
     </div>
@@ -28,7 +32,11 @@ export default class BottomNavbarItemLink extends Vue {
     @Prop(Boolean) private isActive: boolean;
 
     private goTo(): void {
-        this.to ? this.$router.push(this.to) : null;
+        this.to
+            ? this.to !== this.$router.currentRoute.path
+                ? this.$router.push(this.to)
+                : null
+            : null;
     }
 }
 </script>
@@ -47,7 +55,6 @@ export default class BottomNavbarItemLink extends Vue {
     }
 }
 .is-active {
-    color: $secondary;
     .buttom-navbar-item_icon {
         transform: scale(0.7);
         -webkit-animation: deform-size-icone 0.3s linear both;
