@@ -7,10 +7,9 @@
     >
         <template slot="brand">
             <top-navbar-item-link class="top-navbar_brand">
-                <b-icon
-                    class="top-navbar_left-menu"
-                    icon="bars"
-                    size="is-medium"
+                <select-icon
+                    icon="menu"
+                    class="buttom-navbar-item_left-menu"
                     @click.native="changeStatusLeftMenu"
                 />
             </top-navbar-item-link>
@@ -38,6 +37,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
+import SelectIcon from '@/components/icons/SelectIcon.vue';
 import TopNavbarItemLink from '@/components/navbar/TopNavbarItemLink.vue';
 import TopNavbarLanguaje from '@/components/navbar/TopNavbarLanguaje.vue';
 
@@ -46,6 +46,7 @@ import navigationStore from '@/store/navigation-store/NavigationStore';
 @Component({
     name: 'TopNavbar',
     components: {
+        SelectIcon,
         TopNavbarItemLink,
         TopNavbarLanguaje,
     },
