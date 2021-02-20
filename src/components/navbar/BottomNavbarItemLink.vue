@@ -4,7 +4,11 @@
         @click="goTo"
         :class="{ 'is-active': isActive }"
     >
-        <b-icon class="buttom-navbar-item_icon" :icon="icon" size="is-small" />
+        <select-icon
+            :icon="icon"
+            class="buttom-navbar-item_icon"
+            :isActive="isActive"
+        />
         {{ title }}
         <slot />
     </div>
@@ -13,8 +17,13 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
+import SelectIcon from '@/components/icons/SelectIcon.vue';
+
 @Component({
     name: 'BottomNavbarItemLink',
+    components: {
+        SelectIcon,
+    },
 })
 export default class BottomNavbarItemLink extends Vue {
     @Prop(String) private to: string;
@@ -23,7 +32,11 @@ export default class BottomNavbarItemLink extends Vue {
     @Prop(Boolean) private isActive: boolean;
 
     private goTo(): void {
-        this.to ? this.$router.push(this.to) : null;
+        this.to
+            ? this.to !== this.$router.currentRoute.path
+                ? this.$router.push(this.to)
+                : null
+            : null;
     }
 }
 </script>
@@ -37,12 +50,15 @@ export default class BottomNavbarItemLink extends Vue {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    &_icon {
+        transform: scale(0.7);
+    }
 }
 .is-active {
-    color: $secondary;
     .buttom-navbar-item_icon {
-        -webkit-animation: deform-change 0.3s linear both;
-        animation: deform-change 0.3s linear both;
+        transform: scale(0.7);
+        -webkit-animation: deform-size-icone 0.3s linear both;
+        animation: deform-size-icon 0.3s linear both;
     }
 }
 </style>

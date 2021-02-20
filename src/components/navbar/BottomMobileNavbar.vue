@@ -3,7 +3,7 @@
         <bottom-navbar-item-link
             to="/about"
             :title="$t('components.navigation.about')"
-            icon="address-card"
+            icon="people"
             :isActive="this.$route.name === 'About'"
             class="bottom-mobile-navbar_item column"
         />

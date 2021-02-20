@@ -7,11 +7,7 @@
     >
         <template v-slot:label>
             {{ currentLanguage }}
-            <b-icon
-                class="top-navbar-language_icon"
-                icon="globe-europe"
-                size="is-small"
-            />
+            <select-icon class="top-navbar-language_icon" icon="earth" />
         </template>
         <b-navbar-item
             :active="currentLanguage === 'es'"
@@ -31,10 +27,15 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
+import SelectIcon from '@/components/icons/SelectIcon.vue';
+
 import mainStore from '@/store/main-store/MainStore';
 
 @Component({
     name: 'TopNavbarLanguaje',
+    components: {
+        SelectIcon,
+    },
 })
 export default class TopNavbarLanguaje extends Vue {
     private mainStore = mainStore.context(this.$store);
