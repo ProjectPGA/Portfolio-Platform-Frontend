@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <main-layout>
+        <maintenance-page v-if="maintenanceActive" />
+        <main-layout v-if="!maintenanceActive">
             <template>
                 <top-navbar />
                 <transition name="slide-fade-inverted" mode="out-in">
@@ -25,6 +26,7 @@ import Axios from 'axios';
 import LeftMenu from '@/components/navbar/LeftMenu.vue';
 import TopNavbar from '@/components/navbar/TopNavbar.vue';
 import MainLayout from '@/components/common/MainLayout.vue';
+import MaintenancePage from '@/views/MaintenancePage.vue';
 import BottomMobileNavbar from '@/components/navbar/BottomMobileNavbar.vue';
 
 import mainStore from '@/store/main-store/MainStore';
@@ -35,6 +37,7 @@ import mainStore from '@/store/main-store/MainStore';
         LeftMenu,
         TopNavbar,
         MainLayout,
+        MaintenancePage,
         BottomMobileNavbar,
     },
 })
@@ -48,6 +51,14 @@ export default class App extends Vue {
     public created(): void {
         this.$i18n.locale = this.currentLanguage;
         Axios.defaults.headers.post['Accept-Language'] = this.currentLanguage;
+    }
+
+    private get maintenanceActive(): boolean {
+        return this.mainStore.state.maintenancePageStatus;
+    }
+
+    private activeMaintenanceStatus(): void {
+        this.mainStore.actions.activeMaintenancePage();
     }
 
     @Watch('currentLanguage')

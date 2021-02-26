@@ -20,4 +20,8 @@ export default class MainActions extends Actions<
     public changeLanguajeToEnglish(): void {
         this.commit('changeLanguajeToEnglish');
     }
+
+    public activeMaintenancePage(): void {
+        this.commit('activeMaintenancePage');
+    }
 }
