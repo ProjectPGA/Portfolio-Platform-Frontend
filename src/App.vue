@@ -4,9 +4,7 @@
         <main-layout v-else>
             <template>
                 <top-navbar />
-                <transition name="slide-fade-inverted" mode="out-in">
-                    <router-view />
-                </transition>
+                <router-view />
             </template>
             <template v-slot:left>
                 <left-menu />

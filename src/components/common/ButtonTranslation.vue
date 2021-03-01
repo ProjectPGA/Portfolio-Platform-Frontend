@@ -1,8 +1,13 @@
 <template>
-    <div class="float" @click="changeLanguage()" data-cy="translation">
-        <b-icon pack="fas" icon="globe" class="icon-translation"></b-icon>
+    <b-button
+        class="button-translations"
+        @click="changeLanguage()"
+        data-cy="translation"
+        type="is-danger"
+    >
+        <b-icon pack="fas" icon="globe" class="button-translations_icon" />
         {{ currentLanguage }}
-    </div>
+    </b-button>
 </template>
 
 <script lang="ts">
@@ -17,6 +22,10 @@ import mainStore from '@/store/main-store/MainStore';
 export default class ButtonTranslation extends Vue {
     private mainStore = mainStore.context(this.$store);
 
+    private get currentLanguage(): string | null {
+        return this.mainStore.state.currentLanguage;
+    }
+
     private changeLanguageToSpanish(): void {
         this.mainStore.actions.changeLanguageToSpanish();
     }
@@ -25,42 +34,23 @@ export default class ButtonTranslation extends Vue {
         this.mainStore.actions.changeLanguageToEnglish();
     }
 
-    private get currentLanguage(): string | null {
-        return this.mainStore.state.currentLanguage;
-    }
-
     private changeLanguage(): void {
-        if (this.currentLanguage === 'es') {
-            this.changeLanguageToEnglish();
-        } else {
-            this.changeLanguageToSpanish();
-        }
+        this.currentLanguage === 'es'
+            ? this.changeLanguageToEnglish()
+            : this.changeLanguageToSpanish();
     }
 }
 </script>
 
 <style lang="scss" scoped>
-.float {
+.button-translations {
     position: fixed;
-    width: 65px;
-    height: 40px;
     top: 20px;
     right: 20px;
-    background-color: #303841;
-    color: white;
-    border-radius: 15px;
-    -webkit-box-shadow: 2px 2px 3px #999;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    z-index: 1000;
     text-transform: uppercase;
-    cursor: pointer;
-    font-size: 12px;
-    .icon-translation {
-        margin-right: 3px;
+    &_icon {
+        margin-right: 0px !important;
     }
 }
 </style>
