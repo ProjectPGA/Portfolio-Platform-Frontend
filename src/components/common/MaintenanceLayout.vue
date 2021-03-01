@@ -8,10 +8,10 @@
                 title="Maintenance-Image"
             />
             <div class="maintenance-page_description level">
-                <h1 class="maintenance-page_title">
+                <h1 class="maintenance-page_description_title">
                     {{ title }}
                 </h1>
-                <h2 class="maintenance-page_subtitle">
+                <h2 class="maintenance-page_description_subtitle">
                     {{ subtitle }}
                 </h2>
             </div>
@@ -67,22 +67,22 @@ export default class MaintenanceLayout extends Vue {
             height: 90px;
             display: flex;
         }
-    }
-    &_title {
-        font-weight: bold;
-        font-size: 40px;
-        color: $charcoal;
+        &_title {
+            font-weight: bold;
+            font-size: 40px;
+            color: $charcoal;
 
-        @include mobile {
-            font-size: 26px;
-            text-align: center;
+            @include mobile {
+                font-size: 26px;
+                text-align: center;
+            }
         }
-    }
-    &_subtitle {
-        font-size: 20px;
+        &_subtitle {
+            font-size: 20px;
 
-        @include mobile {
-            font-size: 15px;
+            @include mobile {
+                font-size: 15px;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ export default class MainMutations extends Mutations<MainState> {
         this.state.currentLanguage = 'en';
     }
 
-    public activeMaintenancePage(): void {
-        this.state.maintenancePageStatus = !this.state.maintenancePageStatus;
+    public activateMaintenancePage(): void {
+        this.state.maintenancePageStatus = true;
     }
 }

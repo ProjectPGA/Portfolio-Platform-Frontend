@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <maintenance-page v-if="maintenanceActive" />
-        <main-layout v-if="!maintenanceActive">
+        <maintenance-page v-if="maintenancePageStatus" />
+        <main-layout v-else>
             <template>
                 <top-navbar />
                 <transition name="slide-fade-inverted" mode="out-in">
@@ -53,12 +53,12 @@ export default class App extends Vue {
         Axios.defaults.headers.post['Accept-Language'] = this.currentLanguage;
     }
 
-    private get maintenanceActive(): boolean {
+    private get maintenancePageStatus(): boolean {
         return this.mainStore.state.maintenancePageStatus;
     }
 
-    private activeMaintenanceStatus(): void {
-        this.mainStore.actions.activeMaintenancePage();
+    private activateMaintenanceStatus(): void {
+        this.mainStore.actions.activateMaintenancePage();
     }
 
     @Watch('currentLanguage')
