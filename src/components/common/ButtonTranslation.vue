@@ -17,12 +17,12 @@ import mainStore from '@/store/main-store/MainStore';
 export default class ButtonTranslation extends Vue {
     private mainStore = mainStore.context(this.$store);
 
-    private changeLanguajeToSpanish(): void {
-        this.mainStore.actions.changeLanguajeToSpanish();
+    private changeLanguageToSpanish(): void {
+        this.mainStore.actions.changeLanguageToSpanish();
     }
 
-    private changeLanguajeToEnglish(): void {
-        this.mainStore.actions.changeLanguajeToEnglish();
+    private changeLanguageToEnglish(): void {
+        this.mainStore.actions.changeLanguageToEnglish();
     }
 
     private get currentLanguage(): string | null {
@@ -31,9 +31,9 @@ export default class ButtonTranslation extends Vue {
 
     private changeLanguage(): void {
         if (this.currentLanguage === 'es') {
-            this.changeLanguajeToEnglish();
+            this.changeLanguageToEnglish();
         } else {
-            this.changeLanguajeToSpanish();
+            this.changeLanguageToSpanish();
         }
     }
 }
