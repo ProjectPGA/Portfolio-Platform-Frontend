@@ -1,3 +1,12 @@
 html {
     background-color: #f2f8fb;
 }
+
+.navbar-start {
+    .is-active {
+        background: #303841;
+        background: -moz-$whinter-sky-gradient;
+        background: -web-$whinter-sky-gradient;
+        background: $whinter-sky-gradient;
+    }
+}

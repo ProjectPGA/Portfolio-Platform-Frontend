@@ -63,6 +63,8 @@ export default class TopNavbar extends Vue {
     })
     private isSticky: boolean;
 
+    private oli: boolean = true;
+
     private navigationStore = navigationStore.context(this.$store);
 
     private get isShowLeftMenu(): boolean {

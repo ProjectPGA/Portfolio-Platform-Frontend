@@ -8,3 +8,12 @@ $secondary: #cccccc;
 $charcoal: #3a4750;
 $white: #ffffff;
 $winter-sky: #ff006e;
+
+// App gradient
+
+$whinter-sky-gradient: linear-gradient(
+    to bottom,
+    #303841 0%,
+    #303841 93%,
+    #ff006e 100%
+);
