@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <maintenance-page v-if="maintenancePageStatus" />
+        <maintenance-page v-if="isMaintenance" />
         <main-layout v-else>
             <template>
                 <top-navbar />
@@ -51,12 +51,8 @@ export default class App extends Vue {
         Axios.defaults.headers.post['Accept-Language'] = this.currentLanguage;
     }
 
-    private get maintenancePageStatus(): boolean {
-        return this.mainStore.state.maintenancePageStatus;
-    }
-
-    private activateMaintenanceStatus(): void {
-        this.mainStore.actions.activateMaintenancePage();
+    private get isMaintenance(): boolean {
+        return this.mainStore.state.isMaintenance;
     }
 
     @Watch('currentLanguage')

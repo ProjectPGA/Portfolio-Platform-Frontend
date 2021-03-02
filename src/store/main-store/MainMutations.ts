@@ -15,6 +15,10 @@ export default class MainMutations extends Mutations<MainState> {
     }
 
     public activateMaintenancePage(): void {
-        this.state.maintenancePageStatus = true;
+        this.state.isMaintenance = true;
+    }
+
+    public desactivateMaintenancePage(): void {
+        this.state.isMaintenance = false;
     }
 }

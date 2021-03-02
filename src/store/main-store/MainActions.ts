@@ -24,4 +24,8 @@ export default class MainActions extends Actions<
     public activateMaintenancePage(): void {
         this.commit('activateMaintenancePage', null);
     }
+
+    public desactivateMaintenancePage(): void {
+        this.commit('desactivateMaintenancePage', null);
+    }
 }
