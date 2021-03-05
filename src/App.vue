@@ -24,8 +24,9 @@ import Axios from 'axios';
 import LeftMenu from '@/components/navbar/LeftMenu.vue';
 import TopNavbar from '@/components/navbar/TopNavbar.vue';
 import MainLayout from '@/components/common/MainLayout.vue';
-import MaintenancePage from '@/views/MaintenancePage.vue';
 import BottomMobileNavbar from '@/components/navbar/BottomMobileNavbar.vue';
+
+import MaintenancePage from '@/views/MaintenancePage.vue';
 
 import mainStore from '@/store/main-store/MainStore';
 

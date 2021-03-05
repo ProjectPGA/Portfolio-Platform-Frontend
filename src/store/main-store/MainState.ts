@@ -1,5 +1,5 @@
 export default class MainState {
     public testData: boolean = true;
     public currentLanguage: string = 'en';
-    public isMaintenance: boolean = true;
+    public isMaintenance: boolean = false;
 }
