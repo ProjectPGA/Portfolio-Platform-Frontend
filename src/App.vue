@@ -3,7 +3,6 @@
         <main-layout>
             <template>
                 <top-navbar />
-                <router-view />
             </template>
             <template v-slot:left>
                 <left-menu />

@@ -10,3 +10,23 @@ html {
         background: $whinter-sky-gradient;
     }
 }
+
+.navbar-end {
+    .is-active,
+    .navbar-item {
+        background: #303841 !important;
+        &:active,
+        &:hover,
+        &:focus {
+            background: #303841 !important;
+        }
+        .navbar-link {
+            background: #303841 !important;
+            &:active,
+            &:hover,
+            &:focus {
+                background: #303841 !important;
+            }
+        }
+    }
+}

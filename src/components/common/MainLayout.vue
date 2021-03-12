@@ -12,6 +12,9 @@
                 </transition>
                 <div class="column main-layout-content_right-content">
                     <slot />
+                    <transition name="slide-fade-inverted" mode="out-in">
+                        <router-view />
+                    </transition>
                 </div>
             </div>
         </template>

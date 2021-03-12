@@ -63,8 +63,6 @@ export default class TopNavbar extends Vue {
     })
     private isSticky: boolean;
 
-    private oli: boolean = true;
-
     private navigationStore = navigationStore.context(this.$store);
 
     private get isShowLeftMenu(): boolean {
@@ -92,18 +90,12 @@ export default class TopNavbar extends Vue {
         position: sticky;
         top: 0;
     }
-
-    &_left-menu {
-        &:hover {
-            color: $winter-sky;
-        }
-        &:active {
-            color: $winter-sky;
-        }
-    }
     &_brand {
+        &:active,
+        &:hover,
         &:focus {
-            color: #fff !important;
+            color: white !important;
+            background: #303841;
         }
     }
 }
