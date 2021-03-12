@@ -11,13 +11,13 @@
         </template>
         <b-navbar-item
             :active="currentLanguage === 'es'"
-            @click="changeLanguajeToSpanish"
+            @click="changeLanguageToSpanish"
         >
             {{ $t('components.navigation.spanish') }}
         </b-navbar-item>
         <b-navbar-item
             :active="currentLanguage === 'en'"
-            @click="changeLanguajeToEnglish"
+            @click="changeLanguageToEnglish"
         >
             {{ $t('components.navigation.english') }}
         </b-navbar-item>
@@ -32,24 +32,24 @@ import SelectIcon from '@/components/icons/SelectIcon.vue';
 import mainStore from '@/store/main-store/MainStore';
 
 @Component({
-    name: 'TopNavbarLanguaje',
+    name: 'TopNavbarLanguage',
     components: {
         SelectIcon,
     },
 })
-export default class TopNavbarLanguaje extends Vue {
+export default class TopNavbarLanguage extends Vue {
     private mainStore = mainStore.context(this.$store);
 
     private get currentLanguage(): string {
         return this.mainStore.state.currentLanguage;
     }
 
-    private changeLanguajeToSpanish(): void {
-        this.mainStore.actions.changeLanguajeToSpanish();
+    private changeLanguageToSpanish(): void {
+        this.mainStore.actions.changeLanguageToSpanish();
     }
 
-    private changeLanguajeToEnglish(): void {
-        this.mainStore.actions.changeLanguajeToEnglish();
+    private changeLanguageToEnglish(): void {
+        this.mainStore.actions.changeLanguageToEnglish();
     }
 }
 </script>

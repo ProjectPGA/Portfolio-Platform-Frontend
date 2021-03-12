@@ -29,7 +29,7 @@
         </template>
 
         <template slot="end">
-            <top-navbar-languaje />
+            <top-navbar-language />
         </template>
     </b-navbar>
 </template>
@@ -39,7 +39,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 
 import SelectIcon from '@/components/icons/SelectIcon.vue';
 import TopNavbarItemLink from '@/components/navbar/TopNavbarItemLink.vue';
-import TopNavbarLanguaje from '@/components/navbar/TopNavbarLanguaje.vue';
+import TopNavbarLanguage from '@/components/navbar/TopNavbarLanguage.vue';
 
 import navigationStore from '@/store/navigation-store/NavigationStore';
 
@@ -48,7 +48,7 @@ import navigationStore from '@/store/navigation-store/NavigationStore';
     components: {
         SelectIcon,
         TopNavbarItemLink,
-        TopNavbarLanguaje,
+        TopNavbarLanguage,
     },
 })
 export default class TopNavbar extends Vue {
