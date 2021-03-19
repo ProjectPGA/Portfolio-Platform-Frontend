@@ -58,6 +58,7 @@ export default class TopNavbarLanguage extends Vue {
 .top-navbar-language {
     /deep/.navbar-link {
         text-transform: uppercase;
+        font-size: 12px;
     }
     /deep/.navbar-dropdown {
         padding: 0px;

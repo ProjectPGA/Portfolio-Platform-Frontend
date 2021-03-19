@@ -15,21 +15,10 @@
             </top-navbar-item-link>
         </template>
 
-        <template slot="start">
-            <top-navbar-item-link
-                to="/"
-                :title="$t('components.navigation.home')"
-                :isActive="this.$route.name === 'Home'"
-            />
-            <top-navbar-item-link
-                to="/about"
-                :title="$t('components.navigation.about')"
-                :isActive="this.$route.name === 'About'"
-            />
-        </template>
+        <template slot="start"></template>
 
         <template slot="end">
-            <top-navbar-language />
+            <top-navbar-language class="top-navbar_language" />
         </template>
     </b-navbar>
 </template>
@@ -79,7 +68,7 @@ export default class TopNavbar extends Vue {
 
 <style lang="scss" scoped>
 .top-navbar {
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2), 0 0px 10px rgba(0, 0, 0, 0.24);
+    background-color: rgba(0, 0, 0, 0);
 
     &.is-fixed {
         position: fixed;

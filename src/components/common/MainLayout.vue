@@ -67,6 +67,7 @@ export default class MainLayout extends Vue {
 .main-layout-content {
     min-height: 100vh;
     margin: 0px !important;
+    background-color: $primary;
 
     &_left-menu {
         margin: 0px;
