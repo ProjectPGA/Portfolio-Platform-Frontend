@@ -29,7 +29,7 @@
         </template>
 
         <template slot="end">
-            <top-navbar-languaje />
+            <top-navbar-languaje class="top-navbar_end" />
         </template>
     </b-navbar>
 </template>
@@ -95,7 +95,7 @@ export default class TopNavbar extends Vue {
         &:hover,
         &:focus {
             color: white !important;
-            background: #303841;
+            background: $primary;
         }
     }
 }

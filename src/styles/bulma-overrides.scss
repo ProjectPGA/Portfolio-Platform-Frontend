@@ -4,7 +4,7 @@ html {
 
 .navbar-start {
     .is-active {
-        background: #303841;
+        background: $primary;
         background: -moz-$whinter-sky-gradient;
         background: -web-$whinter-sky-gradient;
         background: $whinter-sky-gradient;
@@ -14,18 +14,18 @@ html {
 .navbar-end {
     .is-active,
     .navbar-item {
-        background: #303841 !important;
+        background: $primary !important;
         &:active,
         &:hover,
         &:focus {
-            background: #303841 !important;
+            background: $primary !important;
         }
         .navbar-link {
-            background: #303841 !important;
+            background: $primary !important;
             &:active,
             &:hover,
             &:focus {
-                background: #303841 !important;
+                background: $primary !important;
             }
         }
     }

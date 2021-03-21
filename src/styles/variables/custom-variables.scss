@@ -13,7 +13,7 @@ $winter-sky: #ff006e;
 
 $whinter-sky-gradient: linear-gradient(
     to bottom,
-    #303841 0%,
-    #303841 93%,
-    #ff006e 100%
+    $primary 0%,
+    $primary 93%,
+    $winter-sky 100%
 );

@@ -6,7 +6,6 @@
         :arrowless="true"
     >
         <template v-slot:label>
-            {{ currentLanguage }}
             <select-icon class="top-navbar-language_icon" icon="earth" />
         </template>
         <b-navbar-item
@@ -58,9 +57,16 @@ export default class TopNavbarLanguaje extends Vue {
 .top-navbar-language {
     /deep/.navbar-link {
         text-transform: uppercase;
+        color: white !important;
+        background: $primary;
     }
     /deep/.navbar-dropdown {
         padding: 0px;
+        .navbar-item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 35px;
+        }
     }
     &_icon {
         margin-left: 2px !important;
