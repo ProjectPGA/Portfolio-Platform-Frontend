@@ -7,7 +7,7 @@ module.exports = {
     },
 
     pwa: {
-        name: 'Porfolio framework',
+        name: 'OpenSlot framework',
         themeColor: '#506975',
         msTileColor: '#000000',
         appleMobileWebAppCapable: 'yes',
