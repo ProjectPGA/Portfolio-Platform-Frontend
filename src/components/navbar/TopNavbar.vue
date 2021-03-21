@@ -29,7 +29,7 @@
         </template>
 
         <template slot="end">
-            <top-navbar-languaje class="top-navbar_end" />
+            <top-navbar-language />
         </template>
     </b-navbar>
 </template>
