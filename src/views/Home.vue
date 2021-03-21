@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="section">
-            <p class="title">{{ $t('components.navigation.home') }}</p>
+            <h1 class="title">{{ $t('components.navigation.home') }}</h1>
             <div class="columns">
                 <div class="column is-2">
                     <b-button type="is-info" @click="changeTestDate()">
