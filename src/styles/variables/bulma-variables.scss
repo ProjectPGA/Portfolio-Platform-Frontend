@@ -8,12 +8,15 @@ $danger: $winter-sky;
 // Navbar
 $navbar-item-color: $white;
 $navbar-background-color: $primary;
-$navbar-item-hover-background-color: $white;
-$navbar-item-active-background-color: $white;
+$navbar-item-hover-color: $winter-sky;
+$navbar-item-active-color: $winter-sky;
+
 $navbar-dropdown-background-color: $primary;
 $navbar-dropdown-radius: 0px;
 $navbar-dropdown-boxed-radius: 0px;
 
+$navbar-dropdown-item-hover-color: $winter-sky;
+$navbar-dropdown-item-active-color: $winter-sky;
 //Menu
 $menu-item-active-background-color: $primary;
 $menu-item-radius: 0px;

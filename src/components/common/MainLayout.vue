@@ -12,6 +12,9 @@
                 </transition>
                 <div class="column main-layout-content_right-content">
                     <slot />
+                    <transition name="slide-fade-inverted" mode="out-in">
+                        <router-view />
+                    </transition>
                 </div>
             </div>
         </template>
@@ -72,7 +75,6 @@ export default class MainLayout extends Vue {
         margin: 0px;
         padding: 0px !important;
         width: 300px !important;
-        border-right: 1px solid rgba(0, 0, 0, 0.12);
     }
 
     &_right-content {

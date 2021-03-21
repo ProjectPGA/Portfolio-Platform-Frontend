@@ -1,3 +1,32 @@
 html {
     background-color: #f2f8fb;
 }
+
+.navbar-start {
+    .is-active {
+        background: $primary;
+        background: -moz-$whinter-sky-gradient;
+        background: -web-$whinter-sky-gradient;
+        background: $whinter-sky-gradient;
+    }
+}
+
+.navbar-end {
+    .is-active,
+    .navbar-item {
+        background: $primary !important;
+        &:active,
+        &:hover,
+        &:focus {
+            background: $primary !important;
+        }
+        .navbar-link {
+            background: $primary !important;
+            &:active,
+            &:hover,
+            &:focus {
+                background: $primary !important;
+            }
+        }
+    }
+}

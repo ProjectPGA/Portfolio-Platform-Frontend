@@ -38,7 +38,7 @@ export default class BottomMobileNavbar extends Vue {}
 
 <style lang="scss" scoped>
 .bottom-mobile-navbar {
-    background-color: $charcoal;
+    background-color: $primary;
     width: 100%;
     height: 100%;
     margin: 0px;

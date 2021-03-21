@@ -35,5 +35,13 @@ export default class TopNavbarItemLink extends Vue {
         -webkit-animation: opacity-change 0.2s;
         animation: opacity-change 0.2s;
     }
+    &:active,
+    &:hover,
+    &:focus {
+        background: $primary;
+        background: -moz-$whinter-sky-gradient;
+        background: -web-$whinter-sky-gradient;
+        background: $whinter-sky-gradient;
+    }
 }
 </style>

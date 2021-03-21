@@ -4,7 +4,6 @@
         <main-layout v-else>
             <template>
                 <top-navbar />
-                <router-view />
             </template>
             <template v-slot:left>
                 <left-menu />
