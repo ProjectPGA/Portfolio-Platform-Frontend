@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <main-layout>
+        <maintenance-page v-if="isMaintenance" />
+        <main-layout v-else>
             <template>
                 <top-navbar />
             </template>
@@ -24,6 +25,8 @@ import TopNavbar from '@/components/navbar/TopNavbar.vue';
 import MainLayout from '@/components/common/MainLayout.vue';
 import BottomMobileNavbar from '@/components/navbar/BottomMobileNavbar.vue';
 
+import MaintenancePage from '@/views/MaintenancePage.vue';
+
 import mainStore from '@/store/main-store/MainStore';
 
 @Component({
@@ -32,6 +35,7 @@ import mainStore from '@/store/main-store/MainStore';
         LeftMenu,
         TopNavbar,
         MainLayout,
+        MaintenancePage,
         BottomMobileNavbar,
     },
 })
@@ -45,6 +49,10 @@ export default class App extends Vue {
     public created(): void {
         this.$i18n.locale = this.currentLanguage;
         Axios.defaults.headers.post['Accept-Language'] = this.currentLanguage;
+    }
+
+    private get isMaintenance(): boolean {
+        return this.mainStore.state.isMaintenance;
     }
 
     @Watch('currentLanguage')

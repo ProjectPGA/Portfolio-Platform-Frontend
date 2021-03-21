@@ -17,14 +17,14 @@
         <b-dropdown-item
             :disabled="currentLanguage === 'es'"
             aria-role="listitem"
-            @click="changeLanguajeToSpanish"
+            @click="changeLanguageToSpanish"
         >
             {{ $t('components.navigation.spanish') }}</b-dropdown-item
         >
         <b-dropdown-item
             :disabled="currentLanguage === 'en'"
             aria-role="listitem"
-            @click="changeLanguajeToEnglish"
+            @click="changeLanguageToEnglish"
             >{{ $t('components.navigation.english') }}</b-dropdown-item
         >
     </b-dropdown>
@@ -50,12 +50,12 @@ export default class BottomNavbarItemTranslation extends Vue {
         return this.mainStore.state.currentLanguage;
     }
 
-    private changeLanguajeToSpanish(): void {
-        this.mainStore.actions.changeLanguajeToSpanish();
+    private changeLanguageToSpanish(): void {
+        this.mainStore.actions.changeLanguageToSpanish();
     }
 
-    private changeLanguajeToEnglish(): void {
-        this.mainStore.actions.changeLanguajeToEnglish();
+    private changeLanguageToEnglish(): void {
+        this.mainStore.actions.changeLanguageToEnglish();
     }
 }
 </script>
