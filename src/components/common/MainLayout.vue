@@ -31,7 +31,9 @@
                     </div>
                 </transition>
                 <slot />
-
+                <transition name="slide-fade-inverted" mode="out-in">
+                    <router-view />
+                </transition>
                 <div class="main-layout-content_bottom-menu-mobile">
                     <slot name="bottom" />
                 </div>
