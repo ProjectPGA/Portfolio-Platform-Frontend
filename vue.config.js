@@ -8,8 +8,10 @@ module.exports = {
 
     pwa: {
         name: 'OpenSlot framework',
-        themeColor: '#506975',
-        msTileColor: '#000000',
+        short_name:'OpenSlot',
+        start_url: '/',
+        themeColor: '#303841',
+        msTileColor: '#ff006e',
         appleMobileWebAppCapable: 'yes',
         appleMobileWebAppStatusBarStyle: 'black',
         workboxOptions: {
