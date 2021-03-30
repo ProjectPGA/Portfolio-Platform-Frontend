@@ -23,6 +23,11 @@ const routes = [
         name: 'MaintenancePage',
         component: MaintenancePage,
     },
+    {
+        path: '*',
+        name: 'fallback',
+        redirect: { name: 'Home'}
+    },
 ];
 
 const router = new VueRouter({
