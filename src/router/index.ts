@@ -62,6 +62,11 @@ const routes = [
             ],
         },
     },
+    {
+        path: '*',
+        name: 'fallback',
+        redirect: { name: 'Home' },
+    },
 ];
 
 const router = new VueRouter({
