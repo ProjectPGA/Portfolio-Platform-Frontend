@@ -7,11 +7,17 @@ module.exports = {
     },
 
     pwa: {
-        name: 'OpenSlot framework',
-        themeColor: '#506975',
-        msTileColor: '#000000',
+        name: 'OpenSlot studio',
+        short_name: 'OpenSlot',
+        start_url: '.',
+        themeColor: '#303841',
+        msTileColor: '#ff006e',
         appleMobileWebAppCapable: 'yes',
         appleMobileWebAppStatusBarStyle: 'black',
+        manifestOptions: {
+            background_color: '#f2f8fb',
+            start_url: '.',
+        },
         workboxOptions: {
             exclude: [
                 /\.map$/,

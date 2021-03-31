@@ -15,6 +15,8 @@ import vClickOutside from 'v-click-outside';
 
 import { Device } from '@/models/utils/Device';
 
+import './registerServiceWorker';
+
 Vue.config.productionTip = false;
 
 axios.defaults.headers.post['Content-Type'] = 'application/json';
