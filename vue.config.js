@@ -15,7 +15,7 @@ module.exports = {
         appleMobileWebAppCapable: 'yes',
         appleMobileWebAppStatusBarStyle: 'black',
         manifestOptions: {
-            background_color: '#f2f8fb',
+            background_color: '#ffffff',
             start_url: '.',
         },
         workboxOptions: {
