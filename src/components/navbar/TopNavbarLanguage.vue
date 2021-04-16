@@ -1,6 +1,6 @@
 <template>
     <b-navbar-dropdown
-        aria="select-language"
+        role="menubar"
         :collapsible="true"
         :right="true"
         class="top-navbar-language"
