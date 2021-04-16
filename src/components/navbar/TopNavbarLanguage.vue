@@ -1,7 +1,6 @@
 <template>
     <b-navbar-dropdown
-        role="menubar"
-        aria-controls="st1"
+        role="menu"
         :collapsible="true"
         :right="true"
         class="top-navbar-language"
