@@ -1,5 +1,6 @@
 <template>
     <b-navbar-dropdown
+        role="menu"
         :collapsible="true"
         :right="true"
         class="top-navbar-language"
