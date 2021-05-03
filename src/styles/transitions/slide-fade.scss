@@ -4,14 +4,14 @@
 }
 
 .slide-fade-leave-active {
-    transform: translateX(-10px);
+    transform: translateX(-0.65rem);
     transition: all 0.3s ease;
     opacity: 0;
 }
 
 // first moment that when the component enter or eave
 .slide-fade-enter {
-    transform: translateX(10px);
+    transform: translateX(0.65rem);
     opacity: 0;
 }
 .slide-fade-leave-to {

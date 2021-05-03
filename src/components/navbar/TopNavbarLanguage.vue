@@ -62,15 +62,15 @@ export default class TopNavbarLanguage extends Vue {
         background: $primary;
     }
     /deep/.navbar-dropdown {
-        padding: 0px;
+        padding: 0rem;
         .navbar-item {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 35px;
+            padding-top: 0.65rem;
+            padding-bottom: 0.65rem;
+            padding-right: 2.2rem;
         }
     }
     &_icon {
-        margin-left: 2px !important;
+        margin-left: 0.15rem !important;
     }
 }
 </style>
