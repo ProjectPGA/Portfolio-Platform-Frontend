@@ -71,23 +71,23 @@ export default class MainLayout extends Vue {
 <style lang="scss" scoped>
 .main-layout-content {
     min-height: 100vh;
-    margin: 0px !important;
+    margin: 0rem !important;
 
     &_left-menu {
-        margin: 0px;
-        padding: 0px !important;
-        width: 300px !important;
+        margin: 0rem;
+        padding: 0rem !important;
+        width: 19rem !important;
     }
 
     &_right-content {
-        padding: 0px;
-        margin: 0px;
+        padding: 0rem;
+        margin: 0rem;
     }
 
     &_left-menu-mobile {
-        top: 0px;
-        left: 0px;
-        width: 300px;
+        top: 0rem;
+        left: 0rem;
+        width: 19rem;
         height: 100%;
         z-index: 2000;
         position: absolute;
@@ -95,10 +95,10 @@ export default class MainLayout extends Vue {
     }
 
     &_bottom-menu-mobile {
-        left: 0px;
+        left: 0rem;
         width: 100%;
-        bottom: 0px;
-        height: 50px;
+        bottom: 0rem;
+        height: 3.15rem;
         position: absolute;
         background-color: #fff;
     }

@@ -41,10 +41,10 @@ export default class BottomMobileNavbar extends Vue {}
     background-color: $primary;
     width: 100%;
     height: 100%;
-    margin: 0px;
+    margin: 0rem;
     &_item {
-        margin: 0px;
-        padding: 0px;
+        margin: 0rem;
+        padding: 0rem;
         height: 100%;
     }
 }

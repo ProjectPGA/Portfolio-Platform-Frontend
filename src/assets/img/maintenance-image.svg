@@ -2,7 +2,7 @@
   <defs/>
   <defs>
     <style>
-      .cls-2{fill:#ccc}.cls-3{fill:#303841}.cls-4{fill:#ff006e}.cls-10{fill:none;stroke-miterlimit:10;stroke-width:2px}.cls-12{fill:#3a4750}.cls-10{stroke:#303841}.cls-11{fill:#fff}
+      .cls-2{fill:#ccc}.cls-3{fill:#303841}.cls-4{fill:#ff006e}.cls-10{fill:none;stroke-miterlimit:10;stroke-width:0.15rem}.cls-12{fill:#3a4750}.cls-10{stroke:#303841}.cls-11{fill:#fff}
     </style>
   </defs>
   <circle cx="359.5" cy="314.21" r="258.62" fill="#8d97a0"/>

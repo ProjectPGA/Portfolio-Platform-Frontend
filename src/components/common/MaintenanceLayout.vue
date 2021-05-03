@@ -45,43 +45,43 @@ export default class MaintenanceLayout extends Vue {
     &_content {
         flex-direction: column;
         justify-content: space-around;
-        padding: 20px;
+        padding: 1.25rem;
 
         @include mobile {
             display: flex;
         }
     }
     &_img {
-        max-width: 500px;
-        margin-top: 40px;
-        margin-bottom: 50px;
+        max-width: 31.25rem;
+        margin-top: 2.5rem;
+        margin-bottom: 3.15rem;
         @include mobile {
-            max-width: 400px;
+            max-width: 25rem;
         }
     }
     &_description {
         flex-direction: column;
-        height: 100px;
+        height: 6.25rem;
 
         @include mobile {
-            height: 90px;
+            height: 5.65rem;
             display: flex;
         }
         &_title {
             font-weight: bold;
-            font-size: 40px;
+            font-size: 2.5rem;
             color: $charcoal;
 
             @include mobile {
-                font-size: 26px;
+                font-size: 1.65em;
                 text-align: center;
             }
         }
         &_subtitle {
-            font-size: 20px;
+            font-size: 1.25rem;
 
             @include mobile {
-                font-size: 15px;
+                font-size: 1rem;
             }
         }
     }

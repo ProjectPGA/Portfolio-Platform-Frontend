@@ -3,12 +3,12 @@
 }
 
 .slide-fade-menu-leave-active {
-    transform: translateX(-300px);
+    transform: translateX(-18.75rem);
     transition: all 0.2s ease;
     opacity: 0;
 }
 .slide-fade-menu-enter {
-    transform: translateX(-300px);
+    transform: translateX(-18.75rem);
     transition: all 0.2s ease;
     opacity: 0;
 }

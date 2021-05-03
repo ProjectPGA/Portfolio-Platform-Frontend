@@ -46,7 +46,7 @@ export default class BottomNavbarItemLink extends Vue {
     height: 100%;
     color: #fff;
     display: flex;
-    font-size: 14px;
+    font-size: 0.9rem;
     align-items: center;
     flex-direction: column;
     justify-content: center;

@@ -28,7 +28,7 @@ export default class TopNavbarItemLink extends Vue {
 <style lang="scss" scoped>
 .top-navbar-link {
     &_item {
-        min-width: 25px;
+        min-width: 1.5rem;
         display: flex;
     }
     &:hover {
