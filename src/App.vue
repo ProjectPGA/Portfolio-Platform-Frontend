@@ -17,7 +17,6 @@
 
 <script lang="ts">
 import { Component, Vue, Watch } from 'vue-property-decorator';
-
 import Axios from 'axios';
 
 import LeftMenu from '@/components/navbar/LeftMenu.vue';
